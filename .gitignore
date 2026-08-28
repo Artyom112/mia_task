@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# Датасеты — большие, не коммитим (см. validation.ipynb, откуда их взять)
+data/
+CN-Celeb_flac/
