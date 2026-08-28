@@ -97,14 +97,12 @@ def predict(audio1, audio2):
         audio2 (str): путь ко второму аудиофайлу (передаёт Gradio).
 
     Возвращает:
-        tuple[str, str, str]: (результат на русском, уверенность, сырой score) -
+        tuple[str, str, str]: (label "SAME"/"DIFFERENT", уверенность, сырой score) -
         все строки, т.к. выводятся в текстовые поля интерфейса.
     """
     label, conf, raw_score = verify(audio1, audio2)
 
-    label_ru = "ОДИН И ТОТ ЖЕ ГОЛОС" if label == "SAME" else "РАЗНЫЕ ГОЛОСА"
-
-    return label_ru, f"{conf:.3f}", f"{raw_score:.3f}"
+    return label, f"{conf:.3f}", f"{raw_score:.3f}"
 
 
 demo = gr.Interface(
