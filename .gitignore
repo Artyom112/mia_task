@@ -14,6 +14,7 @@ __pycache__/
 # Датасеты — большие, не коммитим (см. validation.ipynb, откуда их взять)
 data/
 CN-Celeb_flac/
+cv-corpus-26.0-2026-06-12/
 
 # Gradio — runtime-кэш flagged-запросов (может содержать аудио пользователей)
 .gradio/
